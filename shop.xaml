@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grob_1.shop"
+             BackgroundColor="White">
+    <StackLayout BackgroundColor="White" Margin="15">
+
+
+        <StackLayout Orientation="Horizontal" Spacing="57">
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" Aspect="AspectFit"/>
+
+            <Label  Text="GROB.ru" HorizontalOptions="Center" FontSize="35" FontAttributes="Italic, Bold" TextColor="Black"/>
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1286/1286969.png" Aspect="AspectFit"/>
+
+        </StackLayout>
+
+        <StackLayout Margin="0, 40, 0, 0" Orientation="Horizontal">
+
+            <BoxView HeightRequest="2" WidthRequest="60" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="Магазин" FontSize="35" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+            <BoxView HeightRequest="2" WidthRequest="60" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+           
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="0, 30, 0, 0" Spacing="20">
+
+            <Frame BorderColor="Black" WidthRequest="110" HeightRequest="120" HasShadow="True" >
+                <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" >
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/1232/1232994.png"  Aspect="AspectFill" HeightRequest="80" WidthRequest="80" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+                    <Label Text="Гробы" TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="FrameTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+            <Frame BorderColor="Black" WidthRequest="110" HeightRequest="120" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" HasShadow="True">
+                <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" >
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/267/267075.png"  Aspect="AspectFit" HeightRequest="80" WidthRequest="50"/>
+                    <Label Text="Памятники" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" Margin="0, 30, 0, 0" Spacing="20">
+
+            <Frame BorderColor="Black" WidthRequest="110" HeightRequest="120" HasShadow="True" >
+                <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" >
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/149/149488.png"  Aspect="AspectFill" HeightRequest="80" WidthRequest="80"/>
+                    <Label Text="Цветы" TextColor="Black" FontSize="20" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" WidthRequest="110" HeightRequest="120" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" HasShadow="True">
+                <StackLayout VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand" >
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/4056/4056884.png"  Aspect="AspectFit" HeightRequest="80" WidthRequest="50"/>
+                    <Label Text="Разное" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grob_1.korzina"
+             BackgroundColor="White">
+
+    <ScrollView>
+
+        <StackLayout BackgroundColor="White" Margin="15">
+            <StackLayout x:Name="mainStackLayout">
+
+
+                <StackLayout Orientation="Horizontal" Spacing="57">
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" Aspect="AspectFit"/>
+
+                    <Label Text="GROB.ru" HorizontalOptions="Center" FontSize="35" FontAttributes="Italic, Bold" TextColor="Black"/>
+
+                    <Image Source="https://cdn-icons-png.flaticon.com/128/1286/1286969.png" Aspect="AspectFit"/>
+
+                </StackLayout>
+
+                <StackLayout Margin="0, 40, 0, 0" Orientation="Horizontal">
+
+                    <BoxView HeightRequest="2" WidthRequest="80" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+                    <Label x:Name="titlekorz" Text="Корзина" FontSize="35" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+                    <BoxView HeightRequest="2" WidthRequest="80" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+                </StackLayout>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+
+                <Label Text="Итого: "  FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                <Label x:Name="price" Text="0"  FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                <Label Text="₽"  FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+                
+            </StackLayout>
+
+            <Button Clicked="ButtonClickOplata" Text="Купить" FontSize="20" FontAttributes="Bold" BorderWidth="2" BorderColor="Black" CornerRadius="300" BackgroundColor=" white" WidthRequest="160" HeightRequest="50" HorizontalOptions="CenterAndExpand" Margin="0, 50, 0, 0"/>
+
+
+        </StackLayout>
+
+    </ScrollView>
+
+</ContentPage>

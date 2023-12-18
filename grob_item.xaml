@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grob_1.grob_item"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout BackgroundColor="White" Margin="15">
+
+
+        <StackLayout Orientation="Horizontal" Spacing="57">
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" Aspect="AspectFit"/>
+
+            <Label  Text="GROB.ru" HorizontalOptions="Center" FontSize="35" FontAttributes="Italic, Bold" TextColor="Black"/>
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1286/1286969.png" Aspect="AspectFit"/>
+
+        </StackLayout>
+
+        <StackLayout Margin="0, 40, 0, 0" Orientation="Horizontal">
+
+            <BoxView HeightRequest="2" WidthRequest="60" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout>
+                
+                <Label Text="Магазин" FontSize="35" TextColor="Black" FontAttributes="Bold" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+                <Label Text="Гробы" FontSize="20" TextColor="Black"  VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+            </StackLayout>
+
+            <BoxView HeightRequest="2" WidthRequest="60" Color="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+
+        <StackLayout>
+
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Гроб дуб 190х50" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                        <Image Source="https://img.freepik.com/premium-photo/coffin-made-of-wood-isolated-on-a-white-background_524291-711.jpg"  Aspect="AspectFit" HeightRequest="170" WidthRequest="250"/>
+                    <Button Clicked="ButtonClickDub" Text="30000 ₽" FontSize="20" FontAttributes="Bold" BorderWidth="2" BorderColor="Black" CornerRadius="300" BackgroundColor=" white" WidthRequest="100" HeightRequest="50" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BorderColor="Black" VerticalOptions="FillAndExpand"  HorizontalOptions="FillAndExpand" HasShadow="True">
+                <StackLayout>
+                    <Label Text="Гроб липа 190х50" TextColor="Black" FontSize="20" FontAttributes="Bold"/>
+                        <Image Source="https://img.freepik.com/premium-photo/coffin-made-of-wood-isolated-on-a-white-background_524291-753.jpg"  Aspect="AspectFit" HeightRequest="170" WidthRequest="250"/>
+                    <Button Clicked="ButtonClickLipa" Text="20000 ₽" FontSize="20" FontAttributes="Bold" BorderWidth="2" BorderColor="Black" CornerRadius="300" BackgroundColor=" white" WidthRequest="100" HeightRequest="50" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </Frame>
+
+                <Button Clicked="ButtonClickKorz" Text="Оплатить" FontSize="20" FontAttributes="Bold" BorderWidth="2" BorderColor="Black" CornerRadius="300" BackgroundColor=" white" WidthRequest="160" HeightRequest="50" HorizontalOptions="CenterAndExpand" Margin="0, 50, 0, 0"/>
+            
+        </StackLayout>
+
+            <BoxView></BoxView>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

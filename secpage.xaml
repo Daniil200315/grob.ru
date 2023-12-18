@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grob_1.secpage"
+             BackgroundColor="White">
+    <StackLayout BackgroundColor="White" Margin="15">
+
+
+        <StackLayout Orientation="Horizontal" Spacing="57">
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1077/1077063.png" Aspect="AspectFit"/>
+
+            <Label Text="GROB.ru" HorizontalOptions="Center" FontSize="35" FontAttributes="Italic, Bold" TextColor="Black"/>
+
+            <Image Source="https://cdn-icons-png.flaticon.com/128/1286/1286969.png" Aspect="AspectFit"/>
+
+        </StackLayout>
+
+        <StackLayout Margin="0, 20, 0, 0">
+
+            <Label x:Name="namestring" Text="" FontSize="22" TextColor="Black"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="birthstring" Text="" FontSize="20" TextColor="Black"/>
+            <Label Text="-" FontSize="20" TextColor="Black"/>
+            <Label x:Name="deathstring" Text="" FontSize="20" TextColor="Black"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0, 30, 0, 0">
+
+            <Button Clicked="ButtonMorg"  BorderWidth="2"  WidthRequest="160" HeightRequest="110" CornerRadius="10" BackgroundColor="#fdff9d" BorderColor="Black" Text="Морг" FontSize="20" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            </Button>
+
+            <Button Clicked="ButtonKlad" BorderWidth="2"  WidthRequest="160" HeightRequest="110" CornerRadius="10" BackgroundColor="#fdff9d"   BorderColor="Black" Text="Кладбище" FontSize="20" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            </Button>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Margin="0, 10, 0, 0">
+
+            <Button Clicked="ButtonShop" BorderWidth="2"  WidthRequest="330" HeightRequest="110" CornerRadius="10" BackgroundColor="#fdff9d" BorderColor="Black" Text="Магазин" FontSize="20" FontAttributes="Bold" TextColor="Black" VerticalOptions="CenterAndExpand"  HorizontalOptions="CenterAndExpand">
+            </Button>
+
+        </StackLayout>
+
+
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Grob_1.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout BackgroundColor="White" Margin="15">
+
+        <Label Text="GROB.ru" HorizontalOptions="Center" FontSize="35" FontAttributes="Italic, Bold" TextColor="Black"/>
+
+        <StackLayout Margin="0, 30, 0, 0">
+            <Label Text="Введите ФИО усопшего:" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+
+            <Frame CornerRadius="5" BorderColor="Black">
+                <Entry x:Name="nameField" Placeholder="Иванов Иван Иванович" FontSize="20"/>
+            </Frame>
+            
+        </StackLayout>
+
+        <StackLayout Margin="0, 30, 0, 0">
+            <Label Text="Введите дату рождения усопшего:" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+
+            <Frame CornerRadius="5" BorderColor="Black">
+                <Entry x:Name="birthField" Placeholder="01.01.2023" FontSize="20"/>
+            </Frame>
+
+        </StackLayout>
+
+        <StackLayout Margin="0, 30, 0, 0">
+            <Label Text="Введите дату смерти:" FontSize="20" TextColor="Black" FontAttributes="Bold"/>
+
+            <Frame CornerRadius="5" BorderColor="Black">
+                <Entry x:Name="deathField" Placeholder="01.01.2023" FontSize="20"/>
+            </Frame>
+
+        </StackLayout>
+
+
+
+        <Button Clicked="ButtonClick" Text="Отправить" FontSize="20" FontAttributes="Bold" BorderWidth="2" BorderColor="Black" CornerRadius="300" BackgroundColor=" white" WidthRequest="160" HeightRequest="50" HorizontalOptions="CenterAndExpand" Margin="0, 50, 0, 0"/>
+
+        <Label x:Name="errorText" Text="" TextColor="red" FontSize="20"/>
+
+    </StackLayout>
+
+</ContentPage>
